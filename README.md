@@ -15,7 +15,24 @@ pip3 install ultralytics opencv-python numpy pandas
 YOLO-based computer vision pipeline to detect, track, and classify boxes
 (Small / Medium / Large) from CCTV videos and save annotated 5-minute segments.
 
-2.Current Result Example
+## **Approach**
+
+1. **Detection:**  
+   - YOLOv8 (Ultralytics) pre-trained model is used for object detection.  
+   - Each frame is processed to detect boxes automatically.
+
+2. **Size Estimation:**  
+   - Bounding box area in pixels is used to classify sizes:  
+     - Small: Area ≤ 33rd percentile  
+     - Medium: 33rd < Area ≤ 66th percentile  
+     - Large: Area > 66th percentile  
+
+3. **Reporting:**  
+   - CSV report (`box_count_report.csv`) contains bounding box coordinates, area, and size.  
+   - Total box count and size distribution are computed automatically.
+
+
+4.Current Result Example
 Video: 00000000777000000.mp4
 Segment: 28
 Frame: 249,390
@@ -28,7 +45,7 @@ Size Distribution:
 saple_video_result = https://drive.google.com/drive/folders/13lV00MTfMCiY1_UiXEcCXUTF_u8al08B
 
 
-3. to improve this box detection & counting pipeline we should use custum box detection model(to dectect all boxes) and Large number of boxes suggests
+5.for improve this box detection & counting pipeline we should use custum box detection model(to dectect all boxes) and Large number of boxes suggests
 many repeated detections / possible ID switches, which can be improved using some data augmentation to handle different angles, lighting, occlusion.
 at last  we can use custom YOLO with Deep SORT or ByteTrack lets us track boxes accurately, avoid duplicates, and get better size counts.
 for code read Adhere to PEP 8 things etc.
