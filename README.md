@@ -51,4 +51,4 @@ for code read Adhere to PEP 8 things etc.
 Multi-Camera Streams: Connect via RTSP; track boxes per stream using Deep SORT / ByteTrack.
 Containerized Deployment: Package pipeline in Docker
 Output & Monitoring: Save annotated segments and CSV stats; centralize logs.
-Performance Optimization: I'll TensorRT in production for high FPS, low GPU usage, and efficient tracking/counting.
+Performance Optimization: I'll use TensorRT in production for high FPS, low GPU usage, and efficient tracking/counting.
