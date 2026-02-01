@@ -17,19 +17,19 @@ YOLO-based computer vision pipeline to detect, track, and classify boxes
 
 ## **Approach**
 
-1. **Detection:**  
+I. **Detection:**  
    - YOLO pre-trained model is used for object detection.  
    - Each frame is processed to detect boxes automatically.
 
-2. **Size Estimation:**  
+II. **Size Estimation:**  
    - Bounding box area in pixels is used to classify sizes:  
 
-3. **Reporting:**  
+III. **Reporting:**  
    - CSV report (`box_count_report.csv`) contains bounding box coordinates, area, and size.  
    - Total box count and size distribution are computed automatically.
 
 
-4.Current Result Example
+2.Current Result Example
 Video: 00000000777000000.mp4
 Segment: 28
 Frame: 249,390
@@ -42,7 +42,7 @@ Size Distribution:
 saple_video_result = https://drive.google.com/drive/folders/13lV00MTfMCiY1_UiXEcCXUTF_u8al08B
 
 
-5.for improve this box detection & counting pipeline we should use custum box detection model(to dectect all boxes) and Large number of boxes suggests
+3.for improve this box detection & counting pipeline we should use custum box detection model(to dectect all boxes) and Large number of boxes suggests
 many repeated detections / possible ID switches, which can be improved using some data augmentation to handle different angles, lighting, occlusion.
 at last  we can use custom YOLO with Deep SORT or ByteTrack lets us track boxes accurately, avoid duplicates, and get better size counts.
 for code read Adhere to PEP 8 things etc.
