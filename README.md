@@ -17,14 +17,14 @@ YOLO-based computer vision pipeline to detect, track, and classify boxes
 
 ## **Approach**
 
-I. **Detection:**  
+1. **Detection:**  
    - YOLO pre-trained model is used for object detection.  
    - Each frame is processed to detect boxes automatically.
 
-II. **Size Estimation:**  
+2. **Size Estimation:**  
    - Bounding box area in pixels is used to classify sizes:  
 
-III. **Reporting:**  
+3. **Reporting:**  
    - CSV report (`box_count_report.csv`) contains bounding box coordinates, area, and size.  
    - Total box count and size distribution are computed automatically.
 
