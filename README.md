@@ -18,7 +18,7 @@ YOLO-based computer vision pipeline to detect, track, and classify boxes
 ## **Approach**
 
 1. **Detection:**  
-   - YOLOv8 (Ultralytics) pre-trained model is used for object detection.  
+   - YOLO pre-trained model is used for object detection.  
    - Each frame is processed to detect boxes automatically.
 
 2. **Size Estimation:**  
