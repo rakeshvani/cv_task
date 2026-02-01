@@ -23,9 +23,6 @@ YOLO-based computer vision pipeline to detect, track, and classify boxes
 
 2. **Size Estimation:**  
    - Bounding box area in pixels is used to classify sizes:  
-     - Small: Area ≤ 33rd percentile  
-     - Medium: 33rd < Area ≤ 66th percentile  
-     - Large: Area > 66th percentile  
 
 3. **Reporting:**  
    - CSV report (`box_count_report.csv`) contains bounding box coordinates, area, and size.  
