@@ -28,4 +28,7 @@ Size Distribution:
 saple_video_result = https://drive.google.com/drive/folders/13lV00MTfMCiY1_UiXEcCXUTF_u8al08B
 
 
-3. to improve this box detection & counting pipeline we should use custum box detection model(to dectect all boxes) and Large number of boxes suggests many repeated detections / possible ID switches, which can be improved using some data augmentation to handle different angles, lighting, occlusion. at last  we can use custom YOLO with Deep SORT or ByteTrack lets us track boxes accurately, avoid duplicates, and get better size counts.
+3. to improve this box detection & counting pipeline we should use custum box detection model(to dectect all boxes) and Large number of boxes suggests
+many repeated detections / possible ID switches, which can be improved using some data augmentation to handle different angles, lighting, occlusion.
+at last  we can use custom YOLO with Deep SORT or ByteTrack lets us track boxes accurately, avoid duplicates, and get better size counts.
+for code read Adhere to PEP 8 things etc.
